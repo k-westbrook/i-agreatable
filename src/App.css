@@ -31,3 +31,35 @@
     transform: rotate(360deg);
   }
 }
+
+.nav-bar{
+  border-style: dotted;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.nav-link-box{
+  flex-grow: 1;
+  border-style: groove;
+}
+
+.filter-bar{
+  display: flex;
+  justify-content: center;
+}
+.filter-item{
+  flex-grow: 1;
+  display: flex;
+  border-style: groove;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.filter-container{
+  display: flex;
+}
+.filter-text{
+  flex-grow: 1;
+  text-align: center;
+}
