@@ -9,6 +9,10 @@ class FoodTypeFilter extends React.Component {
         this.state = {
             foodTypes: [
                 {
+                    value: "all",
+                    text: "Select One"
+                },
+                {
                     value: "classic_american",
                     text: "Classic American"
                 },

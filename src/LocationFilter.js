@@ -9,6 +9,10 @@ class LocationFilter extends React.Component {
         this.state = {
             locations: [
                 {
+                    value: "all",
+                    text: "Select One"
+                },
+                {
                     value: "seattle",
                     text: "Seattle"
                 }

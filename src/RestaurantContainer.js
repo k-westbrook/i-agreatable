@@ -8,20 +8,29 @@ class RestaurantContainer extends React.Component {
 
 
   render() {
+    console.log(this.props.restaurants)
     return (
-      <div >
+      <div>
         <p>Restaurant Cards would go here</p>
-        {this.props.restaurants.map(restaurant => {
-          return (
-            <div key={parseInt(restaurant.id)}>
-              <p>
-                {restaurant.restaurant_name}, {restaurant.location_name},
+        <div className="restaurant-container">
+          {this.props.restaurants.map(restaurant => {
+            return (
+              <div key={parseInt(restaurant.id)}>
+                <div className="restaurant-card">
+                  <p>
+                    {restaurant.restaurant_name}
+                  </p>
+                  <img className="restaurant-photo" src={restaurant.photo_url} alt=" food" />
+                  <p>{restaurant.location_name},
         {restaurant.neighborhood_name}, {restaurant.rating}
-              </p>
-            </div>
-          )
-        })}
+                  </p>
 
+                </div>
+              </div>
+            )
+          })
+          }
+        </div>
       </div>
     );
   }
