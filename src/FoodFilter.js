@@ -9,27 +9,27 @@ class FoodTypeFilter extends React.Component {
         this.state = {
             foodTypes: [
                 {
-                    value: "all",
+                    value: "Select One",
                     text: "Select One"
                 },
                 {
-                    value: "classic_american",
+                    value: "Classic American",
                     text: "Classic American"
                 },
                 {
-                    value: "new_american",
+                    value: "New American",
                     text: "New American"
                 },
                 {
-                    value: "italian",
+                    value: "Italian",
                     text: "Italian"
                 },
                 {
-                    value: "mexican",
+                    value: "Mexican",
                     text: "Mexican"
                 },
                 {
-                    value: "thai",
+                    value: "Thai",
                     text: "Thai"
                 }
 
@@ -37,6 +37,7 @@ class FoodTypeFilter extends React.Component {
         }
 
     }
+
     render() {
         return (
             <div className='filter-container' >
@@ -44,7 +45,7 @@ class FoodTypeFilter extends React.Component {
                     <p>Food Type</p>
                 </div>
                 <div>
-                    <select>
+                    <select onChange={this.props.handleFoodFilterChange}>
                         {this.state.foodTypes.map((foodObject, index) => {
                             return (
                                 <option key={index} value={foodObject.value}>{foodObject.text}</option>

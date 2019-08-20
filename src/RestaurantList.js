@@ -11,8 +11,12 @@ class RestaurantList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      restaurants: []
+      restaurants: [],
+      filterFoodType: 'Select One',
+      filterLocation: 'Select One'
     }
+    this.handleFoodFilterChange = this.handleFoodFilterChange.bind(this);
+    this.getRest = this.getRest.bind(this);
   }
   async getRest() {
     let result = await axios.get(
@@ -20,13 +24,25 @@ class RestaurantList extends React.Component {
     )
     this.setState({ restaurants: result.data.body });
   }
+
+
+
+
+  handleFoodFilterChange(evt) {
+    evt.preventDefault();
+    console.log(evt.target.value)
+    this.setState({
+      filterFoodType: evt.target.value
+    })
+
+  }
   componentDidMount() {
     this.getRest();
 
 
   }
   render() {
-    console.log(this.state.restaurants)
+
     return (
       <div >
 
@@ -37,14 +53,14 @@ class RestaurantList extends React.Component {
             <p>Filter</p>
           </div>
           <div className="filter-item">
-            <FoodTypeFilter />
+            <FoodTypeFilter handleFoodFilterChange={this.handleFoodFilterChange} />
           </div>
           <div className="filter-item">
             <LocationFilter />
           </div>
         </div>
         <div>
-          <RestaurantContainer restaurants={this.state.restaurants} />
+          <RestaurantContainer restaurants={this.state.restaurants} foodType={this.state.filterFoodType} />
         </div>
 
       </div>
