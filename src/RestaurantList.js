@@ -1,11 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import FoodTypeFilter from './FoodFilter';
 import LocationFilter from './LocationFilter';
 import RestaurantContainer from './RestaurantContainer';
 import axios from 'axios';
-import { throwStatement } from '@babel/types';
+
 
 class RestaurantList extends React.Component {
 
@@ -24,6 +23,7 @@ class RestaurantList extends React.Component {
     let result = await axios.get(
       "https://hclla7yjk3.execute-api.us-west-1.amazonaws.com/Production"
     )
+
     this.setState({ restaurants: result.data.body });
   }
 
@@ -37,7 +37,6 @@ class RestaurantList extends React.Component {
 
   handleLocationFilterChange(evt) {
     evt.preventDefault();
-    console.log(evt.target.value)
     this.setState({
       filterLocation: evt.target.value
     })
