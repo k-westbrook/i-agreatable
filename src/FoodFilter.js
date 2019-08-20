@@ -31,6 +31,18 @@ class FoodTypeFilter extends React.Component {
                 {
                     value: "Thai",
                     text: "Thai"
+                },
+                {
+                    value: "Mediterranean",
+                    text: "Mediterranean"
+                },
+                {
+                    value: "Pizza",
+                    text: "Pizza"
+                },
+                {
+                    value: "Cocktail Bar",
+                    text: "Cocktail Bar"
                 }
 
             ]

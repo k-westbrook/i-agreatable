@@ -8,14 +8,14 @@ class RestaurantContainer extends React.Component {
 
 
   render() {
-    console.log(this.props.restaurants)
+
     return (
       <div>
         <p>Restaurant Cards would go here</p>
         <div className="restaurant-container">
           {this.props.restaurants.map(restaurant => {
-            console.log(restaurant.food_type, this.props.foodType)
-            if (this.props.foodType === restaurant.food_type) {
+
+            if ((this.props.foodType === "Select One" || this.props.foodType === restaurant.food_type) && (this.props.location === "Select One" || this.props.location === restaurant.location_name)) {
               return (
                 <div key={parseInt(restaurant.id)}>
                   <div className="restaurant-card">

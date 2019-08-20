@@ -5,6 +5,7 @@ import FoodTypeFilter from './FoodFilter';
 import LocationFilter from './LocationFilter';
 import RestaurantContainer from './RestaurantContainer';
 import axios from 'axios';
+import { throwStatement } from '@babel/types';
 
 class RestaurantList extends React.Component {
 
@@ -16,6 +17,7 @@ class RestaurantList extends React.Component {
       filterLocation: 'Select One'
     }
     this.handleFoodFilterChange = this.handleFoodFilterChange.bind(this);
+    this.handleLocationFilterChange = this.handleLocationFilterChange.bind(this);
     this.getRest = this.getRest.bind(this);
   }
   async getRest() {
@@ -26,20 +28,22 @@ class RestaurantList extends React.Component {
   }
 
 
-
-
   handleFoodFilterChange(evt) {
     evt.preventDefault();
-    console.log(evt.target.value)
     this.setState({
       filterFoodType: evt.target.value
     })
+  }
 
+  handleLocationFilterChange(evt) {
+    evt.preventDefault();
+    console.log(evt.target.value)
+    this.setState({
+      filterLocation: evt.target.value
+    })
   }
   componentDidMount() {
     this.getRest();
-
-
   }
   render() {
 
@@ -56,11 +60,11 @@ class RestaurantList extends React.Component {
             <FoodTypeFilter handleFoodFilterChange={this.handleFoodFilterChange} />
           </div>
           <div className="filter-item">
-            <LocationFilter />
+            <LocationFilter handleLocationFilterChange={this.handleLocationFilterChange} />
           </div>
         </div>
         <div>
-          <RestaurantContainer restaurants={this.state.restaurants} foodType={this.state.filterFoodType} />
+          <RestaurantContainer restaurants={this.state.restaurants} foodType={this.state.filterFoodType} location={this.state.filterLocation} />
         </div>
 
       </div>

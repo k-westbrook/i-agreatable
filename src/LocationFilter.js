@@ -9,12 +9,16 @@ class LocationFilter extends React.Component {
         this.state = {
             locations: [
                 {
-                    value: "all",
+                    value: "Select One",
                     text: "Select One"
                 },
                 {
-                    value: "seattle",
+                    value: "Seattle",
                     text: "Seattle"
+                },
+                {
+                    value: "New York City",
+                    text: "New York City"
                 }
 
             ]
@@ -28,7 +32,7 @@ class LocationFilter extends React.Component {
                     <p>Location</p>
                 </div>
                 <div>
-                    <select>
+                    <select onChange={this.props.handleLocationFilterChange}>
                         {this.state.locations.map((locationObject, index) => {
                             return (
                                 <option key={index} value={locationObject.value}>{locationObject.text}</option>
