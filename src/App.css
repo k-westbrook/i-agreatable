@@ -51,6 +51,30 @@ text-decoration: none;
 color:black;
 }
 
+.homepage-title
+{
+  font-size: 50px;
+  margin-bottom:0px;
+}
+
+.homepage-instructions{
+  text-align: left;
+  margin-left: 250px;
+  margin-right:250px;
+  padding:20px;
+}
+
+.homepage-section-headers{
+  font-size: 30px;
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+
+.homepage-paragraph{
+  font-size:25px;
+
+}
+
 .filter-bar{
   display: flex;
   justify-content: center;
@@ -81,7 +105,7 @@ color:black;
 }
 
 .select-box-div{
-padding-top:15px;
+padding-top:18px;
 padding-bottom: 15px;
 }
 

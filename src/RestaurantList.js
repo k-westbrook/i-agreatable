@@ -49,7 +49,7 @@ class RestaurantList extends React.Component {
     return (
       <div >
 
-        <p className="header-restaurant">RestaurantList</p>
+        <p className="header-restaurant">Restaurant List</p>
         <div className="filter-bar">
 
           <div className="filter-item">
