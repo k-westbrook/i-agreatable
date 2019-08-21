@@ -17,12 +17,19 @@ class RestaurantContainer extends React.Component {
                 <Link className="link" to={`/review/${restaurant.location_name}/${restaurant.food_type}/${restaurant.id}`} key={parseInt(restaurant.id)} >
                   <div >
                     <div className="restaurant-card">
-                      <p>
-                        {restaurant.restaurant_name}
-                      </p>
+                      <h4 className="restaurant-name-title">{restaurant.restaurant_name}</h4>
                       <img className="restaurant-photo" src={restaurant.photo_url} alt=" food" />
-                      <p>{restaurant.location_name},
-        {restaurant.neighborhood_name}, {restaurant.rating},{restaurant.food_type}
+                      <p className="restaurant-short-info">
+                        <b>Location: </b>{restaurant.location_name}
+                        <br />
+                        <b> Neighborhood: </b>
+                        {restaurant.neighborhood_name}
+                        <br />
+                        <b>
+                          Food Type:
+                        </b> {restaurant.food_type}
+                        <br />
+                        <b>Rating:</b> {restaurant.rating}
                       </p>
 
                     </div>
