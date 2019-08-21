@@ -46,11 +46,24 @@ class SingleRestaurant extends React.Component {
       <div >
         {!this.state.restaurantId ?
           <div>
-            <h3>{this.state.restaurantName}</h3>
-            <p>Location: {this.state.location}, {this.state.neighborhood}</p>
-            <p>Rating: {this.state.rating}</p>
-            <img src={this.state.photoURL} alt="restaurant_pic" />
+            <h3 className="restaurant-name-title-single-page">{this.state.restaurantName}</h3>
+            <div className="restaurant-single-page-side-by-side">
+              <div className="image-container-single-page">
+                <img className="restaurant-photo-single-page" src={this.state.photoURL} alt=" restaurant_pic" />
+              </div>
+              <div className="restaurant-info-single-page">
+                <p>
+                  <b>Location:</b> {this.state.location}
+                  <br />
+                  <b> Neighborhood: </b>{this.state.neighborhood}
+                  <br />
+                  <b> Food Type:</b> {this.state.foodType}
+                  <br />
+                  <b>Rating: </b>{this.state.rating} </p>
+              </div>
+            </div>
             <p>{this.state.reivew}</p>
+
           </div>
           :
           <div>
