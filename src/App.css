@@ -163,26 +163,43 @@ color:black;
 
 .restaurant-info-single-page{
   font-size: 30px;
-  line-height: 50px;
+  line-height: 70px;
   margin-top:0px;
   flex-grow: 1;
   text-align: left;
-
 }
 
 .restaurant-photo-single-page{
   height:400px;
   width:400px;
 }
+
 .image-container-single-page
 {
   text-align: right;
   flex-grow: 1;
   margin-right:25px;
 }
+
 .restaurant-single-page-side-by-side
 {
   margin-top:20px;
   display: flex;
+}
 
+.restaurant-review-container{
+  text-align: left;
+  margin-left:320px;
+  margin-right:320px;
+}
+
+.review-title-single-page{
+  text-align: left;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.review-text{
+  font-size: 20px;
 }

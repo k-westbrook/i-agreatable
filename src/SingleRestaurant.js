@@ -61,8 +61,14 @@ class SingleRestaurant extends React.Component {
                   <br />
                   <b>Rating: </b>{this.state.rating} </p>
               </div>
+
             </div>
-            <p>{this.state.reivew}</p>
+            <div className="restaurant-review-container">
+              <h4 className="review-title-single-page">Review</h4>
+              <p className="review-text">
+                {this.state.review}
+              </p>
+            </div>
 
           </div>
           :
