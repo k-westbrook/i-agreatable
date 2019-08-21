@@ -9,7 +9,6 @@ class RestaurantContainer extends React.Component {
 
     return (
       <div>
-        <p>Restaurant Cards would go here</p>
         <div className="restaurant-container">
           {this.props.restaurants.map(restaurant => {
 

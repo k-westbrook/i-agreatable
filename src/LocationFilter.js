@@ -27,11 +27,11 @@ class LocationFilter extends React.Component {
     render() {
         return (
             <div className="filter-container">
-                <div>
+                <div className="filter-text">
                     <p>Location</p>
                 </div>
-                <div>
-                    <select onChange={this.props.handleLocationFilterChange}>
+                <div className='select-box-div'>
+                    <select onChange={this.props.handleLocationFilterChange} className="filter-select">
                         {this.state.locations.map((locationObject, index) => {
                             return (
                                 <option key={index} value={locationObject.value}>{locationObject.text}</option>

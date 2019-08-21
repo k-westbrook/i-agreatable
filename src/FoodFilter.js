@@ -52,11 +52,11 @@ class FoodTypeFilter extends React.Component {
     render() {
         return (
             <div className='filter-container' >
-                <div>
+                <div className="filter-text">
                     <p>Food Type</p>
                 </div>
-                <div>
-                    <select onChange={this.props.handleFoodFilterChange}>
+                <div className='select-box-div'>
+                    <select onChange={this.props.handleFoodFilterChange} className="filter-select">
                         {this.state.foodTypes.map((foodObject, index) => {
                             return (
                                 <option key={index} value={foodObject.value}>{foodObject.text}</option>
