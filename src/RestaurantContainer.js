@@ -14,7 +14,7 @@ class RestaurantContainer extends React.Component {
 
             if ((this.props.foodType === "Select One" || this.props.foodType === restaurant.food_type) && (this.props.location === "Select One" || this.props.location === restaurant.location_name)) {
               return (
-                <Link to={`/review/${restaurant.location_name}/${restaurant.food_type}/${restaurant.id}`} key={parseInt(restaurant.id)} >
+                <Link className="link" to={`/review/${restaurant.location_name}/${restaurant.food_type}/${restaurant.id}`} key={parseInt(restaurant.id)} >
                   <div >
                     <div className="restaurant-card">
                       <p>
