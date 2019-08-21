@@ -8,18 +8,21 @@ class NavBar extends Component {
       <div>
         <div className="nav-bar">
           <div className='nav-link-box'>
-            <Link className="link" to='/'>
-              <h4 className="link-text">Home</h4>
+            <Link className="link-nav" to='/'>
+              <h4 className="nav-bar-link-text">Home</h4>
             </Link>
           </div>
 
           <div className='nav-link-box'>
-            <Link className="link" to='/thelist'>
-              <h4 className="link-text">Restaurant List</h4>
+            <Link className="link-nav" to='/thelist'>
+
+              <h4 className="nav-bar-link-text">Restaurant List</h4>
+
+
             </Link>
           </div>
         </div >
-      </div>
+      </div >
     );
   }
 }
