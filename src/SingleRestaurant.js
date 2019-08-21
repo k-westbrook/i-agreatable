@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios';
+import CommentForm from './CommentForm';
 
 
 class SingleRestaurant extends React.Component {
@@ -68,6 +69,7 @@ class SingleRestaurant extends React.Component {
               <p className="review-text">
                 {this.state.review}
               </p>
+              <CommentForm />
             </div>
 
           </div>

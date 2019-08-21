@@ -225,6 +225,7 @@ color:black;
   border-style: groove;
   margin-bottom: 20px;
   margin-top: 20px;
+  padding-left:20px;
 }
 
 .review-title-single-page{
@@ -253,3 +254,34 @@ object-fit: cover;
   padding-top:20px;
   margin-top: 15px;
 }
+
+.name-comment-container{
+  display: flex;
+}
+
+.text-name{
+  margin-right:20px;
+  font-size: 20px;
+}
+
+.input-name-comment{
+  margin-top:15px;
+  width: 200px;
+  height:30px;
+  font-size: 20px;
+}
+
+.input-comment{
+  height:60px;
+  width:600px;
+  font-size:20px;
+}
+
+.submit-button{
+margin-top:20px;
+margin-bottom: 20px;
+height:30px;
+font-size:20px;
+font-family:"Cherry Swash"
+}
+
