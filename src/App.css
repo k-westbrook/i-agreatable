@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: 	#F8F8FF;
 }
 
 .App-logo {
@@ -124,7 +125,7 @@ padding-bottom: 15px;
 }
 .restaurant-card{
   border-style:groove;
-  height:400px;
+  height:430px;
   width: 400px;
   margin-top:15px;
 }
@@ -202,4 +203,10 @@ color:black;
 
 .review-text{
   font-size: 20px;
+}
+
+.homepage-photo{
+width: 100vw;
+height:400px;
+object-fit: cover;
 }
