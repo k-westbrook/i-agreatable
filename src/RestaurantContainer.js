@@ -6,13 +6,14 @@ class RestaurantContainer extends React.Component {
 
 
   render() {
-
+    let count = 0;
     return (
       <div>
         <div className="restaurant-container">
           {this.props.restaurants.map(restaurant => {
 
             if ((this.props.foodType === "Select One" || this.props.foodType === restaurant.food_type) && (this.props.location === "Select One" || this.props.location === restaurant.location_name)) {
+              count++;
               return (
                 <Link className="link" to={`/review/${restaurant.location_name}/${restaurant.food_type}/${restaurant.id}`} key={parseInt(restaurant.id)} >
                   <div >
@@ -38,6 +39,14 @@ class RestaurantContainer extends React.Component {
               )
             }
           })
+          }
+          {(count === 0) ?
+            <div className="no-restaurant-container">
+              <h4>No restaurants in this category yet</h4>
+            </div>
+            :
+            <div>
+            </div>
           }
         </div>
       </div >
