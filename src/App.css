@@ -2,7 +2,7 @@
   text-align: center;
   background-color: 	#F8F8FF;
   font-family: 'Cherry Swash';
-  max-height:100%;
+  height:100vh;
 }
 
 .App-logo {
@@ -39,15 +39,14 @@
   display: flex;
   text-decoration: none;
   color:black;
-  margin-bottom: 10px;
   background-color: #333333;
 
 }
 
 .nav-link-box{
 flex-grow:1;
-margin-left:130px;
-margin-right: 130px;
+margin-left:10vw;
+margin-right: 10vw;
 }
 
 .nav-bar:visited{
@@ -57,13 +56,13 @@ color:black;
 
 .nav-bar-link-text{
   border-style:solid;
-  font-size:25px;
-  padding: 10px;
+  font-size:5vh;
+  padding: 2vh;
   background-color: 	#F8F8FF;
 }
 
 .link-text{
-  font-size:25px;
+  font-size:3vh;
 }
 
 .link-nav{
@@ -79,28 +78,28 @@ color:black;
 
 .homepage-title
 {
-  font-size: 50px;
-  margin-bottom:0px;
-  margin-top: 5px;
+  font-size: 8vh;
+  margin-bottom:0vh;
+  margin-top: 3vh;
   font-family: 'Love Ya Like A Sister';
   border-style: solid;
 }
 
 .homepage-instructions{
   text-align: left;
-  margin-left: 250px;
-  margin-right:250px;
-  padding:20px;
+  margin-left: 20vw;
+  margin-right:20vw;
+  padding:5vh;
 }
 
 .homepage-section-headers{
-  font-size: 30px;
+  font-size: 5vh;
   margin-top:0px;
   margin-bottom: 0px;
 }
 
 .homepage-paragraph{
-  font-size:25px;
+  font-size:3vh;
 
 }
 
@@ -141,8 +140,8 @@ padding-bottom: 15px;
 }
 
 .header-restaurant{
-  font-size: 50px;
-  margin: 0px;
+  font-size: 10vh;
+  margin: 0vh;
 }
 
 .restaurant-container{
@@ -154,26 +153,26 @@ padding-bottom: 15px;
 }
 .restaurant-card{
   border-style:groove;
-  height:430px;
-  width: 400px;
-  margin-top:15px;
+  height:70vh;
+  width: 60vh;
+  margin-top:5vh;
 }
 
 .restaurant-name-title{
-  font-size: 30px;
-  margin-top:10px;
-  margin-bottom: 10px;
+  font-size: 5vh;
+  margin-top:5vh;
+  margin-bottom:5vh;
 }
 
 .restaurant-short-info{
   line-height: 40px;
-  font-size:25px;
-  margin-top:2px;
+  font-size:3.5vh;
+  margin-top:2vh;
 }
 
 .no-restaurant-container{
   height:50vh;
-  font-size:30px;
+  font-size:7vh;
 }
 
 .link{
@@ -192,56 +191,57 @@ color:black;
 }
 
 .restaurant-name-title-single-page{
-  font-size: 50px;
-  margin-bottom: 0px;
-  margin-top: 0px;
+  font-size: 8vh;
+  margin-bottom: 0vh;
+  margin-top: 0vh;
 }
 
 .restaurant-info-single-page{
-  font-size: 30px;
+  font-size: 5vh;
   line-height: 70px;
-  margin-top:0px;
+  margin-top:0vh;
   flex-grow: 1;
   text-align: left;
 }
 
 .restaurant-photo-single-page{
-  height:400px;
-  width:400px;
+  height:60vh;
+  width:40vw;
 }
 
 .image-container-single-page
 {
   text-align: right;
   flex-grow: 1;
-  margin-right:25px;
+  margin-right:5vw;
 }
 
 .restaurant-single-page-side-by-side
 {
-  margin-top:20px;
+  margin-top:5vh;
   display: flex;
 }
 
 .restaurant-review-container{
+
   text-align: left;
-  margin-left:300px;
-  margin-right:300px;
+  margin-left:20vw;
+  margin-right:20vw;
   border-style: groove;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  padding-left:20px;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+  padding-left:5vw;
 }
 
 .review-title-single-page{
   text-align: left;
-  font-size: 30px;
-  margin-top: 10px;
+  font-size: 5vh;
+  margin-top: 2vh;
 
 }
 
 .review-text{
-  font-size: 20px;
+  font-size: 3vh;
   border-style: groove;
   height: 100%;
 }
