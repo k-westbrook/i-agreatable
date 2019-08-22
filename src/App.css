@@ -256,37 +256,50 @@ object-fit: cover;
   background-color: #333333;
   color:white;
   height:20vh;
-  padding-top:20px;
-  margin-top: 15px;
+  padding-top:5vh;
+  margin-top: 5vh;
 }
 
+.leave-a-comment-text{
+  text-align: left;
+  font-size: 5vh;
+  margin-bottom: 0vh;
+}
 .name-comment-container{
   display: flex;
+  margin-bottom: 2vh;
 }
 
 .text-name{
-  margin-right:20px;
-  font-size: 20px;
+  margin-right:2vw;
+  font-size: 3vh;
 }
 
 .input-name-comment{
-  margin-top:15px;
-  width: 200px;
-  height:30px;
-  font-size: 20px;
+  margin-top:2vh;
+  width: 20vw;
+  height:5vh;
+  font-size: 2.5vh;
+  font-family:"Cherry Swash";
 }
 
 .input-comment{
-  height:60px;
-  width:600px;
-  font-size:20px;
+  height:10vh;
+  width:40vw;
+  font-size:2.5vh;
+  resize: none;
+  font-family:"Cherry Swash";
 }
 
 .submit-button{
-margin-top:20px;
-margin-bottom: 20px;
-height:30px;
-font-size:20px;
+margin-top:3vh;
+margin-bottom: 3vh;
+height:5vh;
+width:20vw;
+font-size:2.5vh;
 font-family:"Cherry Swash"
 }
 
+.comments-section{
+  font-size: 3.0vh;
+}

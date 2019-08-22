@@ -8,10 +8,10 @@ class CommentSection extends React.Component {
   render() {
     return (
       <div className="comment-section">
-        <h4 className="review-title-single-page">Comments</h4>
+        <h4 className="leave-a-comment-text">Comments</h4>
         {(this.props.comments.length > 0) ? this.props.comments.map(comment => {
           return (
-            <div>
+            <div className="comments-section">
               <p><b>{comment.name}: </b> {comment.comment}</p>
             </div>
           )

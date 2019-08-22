@@ -10,14 +10,14 @@ class CommentForm extends React.Component {
 
     return (
       <div>
-        <h4 className="review-title-single-page">Leave a Comment</h4>
+        <h4 className="leave-a-comment-text">Leave a Comment</h4>
         <form onSubmit={this.props.handleSubmit}>
           <div className='name-comment-container'>
             <div className='text-name'>
               <p>Name</p>
             </div>
             <div >
-              <input type="text" name="userName" className="input-name-comment" />
+              <input required="required" type="text" name="userName" className="input-name-comment" />
             </div>
           </div>
           <div className='name-comment-container'>
@@ -25,7 +25,7 @@ class CommentForm extends React.Component {
               <p>Comment</p>
             </div>
             <div >
-              <textarea name="comment" className="input-comment"></textarea>
+              <textarea required="required" name="comment" className="input-comment"></textarea>
             </div>
           </div>
           <button className="submit-button">Submit your comment!</button>
