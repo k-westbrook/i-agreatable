@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import axios from 'axios';
 import CommentForm from './CommentForm';
+import CommentSection from './CommentSection';
 
 
 class SingleRestaurant extends React.Component {
@@ -16,12 +17,15 @@ class SingleRestaurant extends React.Component {
       neighborhood: '',
       photoURL: '',
       rating: null,
-      review: ''
+      review: '',
+      comments: []
     }
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   async getSingleRestaurantRequest(id) {
     const response = await axios.post(" https://0uz9m4vuz3.execute-api.us-west-1.amazonaws.com/Production", { restaurantId: id });
+    console.log(response)
     const data = response.data.body[0];
     this.setState({
       restaurantName: data.restaurant_name,
@@ -34,18 +38,40 @@ class SingleRestaurant extends React.Component {
     })
   }
 
+  async getSingleRestaurantComments(id) {
+    const response = await axios.post("https://wg49ryzop8.execute-api.us-west-1.amazonaws.com/Production", { restaurantId: id });
+
+    const data = response.data.body;
+
+    this.setState({
+      comments: data
+    });
+  }
+
+  async handleSubmit(evt) {
+
+    evt.preventDefault();
+
+    await axios.post("https://vyk3xhy4j2.execute-api.us-west-1.amazonaws.com/Production", { restaurant_id: this.state.restaurantId, name: evt.target.userName.value, comment: evt.target.comment.value })
+
+
+  }
+
+
   componentDidMount() {
     const restaurantId = this.props.match.params.id;
-
+    this.setState({
+      restaurantId
+    })
     this.getSingleRestaurantRequest(restaurantId);
-
+    this.getSingleRestaurantComments(restaurantId);
   }
   render() {
 
     return (
 
       <div >
-        {!this.state.restaurantId ?
+        {this.state.restaurantId ?
           <div>
             <h3 className="restaurant-name-title-single-page">{this.state.restaurantName}</h3>
             <div className="restaurant-single-page-side-by-side">
@@ -69,7 +95,8 @@ class SingleRestaurant extends React.Component {
               <p className="review-text">
                 {this.state.review}
               </p>
-              <CommentForm />
+              <CommentForm handleSubmit={this.handleSubmit} />
+              <CommentSection comments={this.state.comments} />
             </div>
 
           </div>
