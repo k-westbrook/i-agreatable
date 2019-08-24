@@ -429,14 +429,14 @@ margin-right:1vw;
     justify-content: center;
     background-color:#F8F8FF;
     width:100vw;
-    padding-left:10vw;
-    padding-right:10vw;
+    padding-bottom: 5vh;
+    padding-top:3vh;
 
   }
   .restaurant-card{
     border-style:groove;
     height:45vh;
-    width: 80vh;
+    width: 40vh;
     margin-top:2vh;
     margin-left:1vw;
     margin-right:1vw;
