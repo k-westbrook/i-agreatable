@@ -18,6 +18,10 @@ class LocationFilter extends React.Component {
                 {
                     value: "New York City",
                     text: "New York City"
+                },
+                {
+                    value: "Portland",
+                    text: "Portland"
                 }
 
             ]

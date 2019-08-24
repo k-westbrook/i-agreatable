@@ -80,7 +80,7 @@ class SingleRestaurant extends React.Component {
 
     return (
 
-      <div >
+      <div className="single-page">
         {this.state.restaurantId ?
           <div>
             <h3 className="restaurant-name-title-single-page">{this.state.restaurantName}</h3>
@@ -102,9 +102,15 @@ class SingleRestaurant extends React.Component {
             </div>
             <div className="restaurant-review-container">
               <h4 className="review-title-single-page">Review</h4>
-              <p className="review-text">
-                {this.state.review}
+              {(this.state.review !== null) ?
+                <p className="review-text">
+                  {this.state.review}
+                </p>
+                :
+                <p className="review-text">
+                  No review yet!
               </p>
+              }
               <CommentForm handleSubmit={this.handleSubmit} />
               <CommentSection comments={this.state.comments} />
             </div>
