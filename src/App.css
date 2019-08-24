@@ -93,6 +93,10 @@ color:black;
   padding:5vh;
 }
 
+.home-page{
+  background-color:#F8F8FF;
+}
+
 .homepage-section-headers{
   font-size: 5vh;
   margin-top:0px;
@@ -150,8 +154,9 @@ padding-bottom: 15px;
   flex-wrap: wrap;
   justify-content: center;
   background-color:#F8F8FF;
-
+  padding-bottom: 5vh;
 }
+
 .restaurant-card{
   border-style:groove;
   height:70vh;
@@ -231,7 +236,6 @@ color:black;
   margin-left:20vw;
   margin-right:20vw;
   border-style: groove;
-  margin-bottom: 5vh;
   margin-top: 5vh;
   padding-left:5vw;
   padding-right:5vw;
@@ -245,7 +249,7 @@ color:black;
 }
 .single-page{
   background-color:#F8F8FF;
-
+  padding-bottom:5vh;
 }
 
 .review-text{
@@ -264,9 +268,9 @@ object-fit: cover;
 .footer{
   background-color: #333333;
   color:white;
-  height:20vh;
+  height:10vh;
   padding-top:5vh;
-  margin-top: 5vh;
+
 }
 
 .leave-a-comment-text{
