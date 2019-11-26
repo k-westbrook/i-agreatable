@@ -10,7 +10,7 @@ class CommentSection extends React.Component {
       <div className="comment-section">
         <h4 className="leave-a-comment-text">Comments</h4>
         {(this.props.comments.length > 0) ? this.props.comments.map(comment => {
-
+          console.log(comment.id)
           return (
 
             < div key={parseInt(comment.id)} className="comments-section">
