@@ -50,13 +50,13 @@ class SingleRestaurant extends React.Component {
   async handleSubmit(evt) {
 
     evt.preventDefault();
-    const restaurant_id = this.state.restaurantId;
+    const restaurantId = this.state.restaurantId;
     const name = evt.target.userName.value;
     const comment = evt.target.comment.value;
-    await axios.post("https://vyk3xhy4j2.execute-api.us-west-1.amazonaws.com/Production", { restaurant_id, name, comment })
+    await axios.post(`https://wg49ryzop8.execute-api.us-west-1.amazonaws.com/Production/`, { restaurant_id: restaurantId, name, comment })
     evt.persist();
     const newComment = {
-      restaurant_id, name, comment
+      restaurantId, name, comment
     }
 
     const newCommentArray = [...this.state.comments, newComment];
