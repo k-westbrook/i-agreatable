@@ -25,7 +25,7 @@ class SingleRestaurant extends React.Component {
 
   async getSingleRestaurantRequest(id) {
     const response = await axios.post(" https://0uz9m4vuz3.execute-api.us-west-1.amazonaws.com/Production", { restaurantId: id });
-    console.log(response)
+
     const data = response.data.body[0];
     this.setState({
       restaurantName: data.restaurant_name,
@@ -39,12 +39,12 @@ class SingleRestaurant extends React.Component {
   }
 
   async getSingleRestaurantComments(id) {
-    const response = await axios.post("https://wg49ryzop8.execute-api.us-west-1.amazonaws.com/Production", { restaurantId: id });
+    const response = await axios.get(`https://wg49ryzop8.execute-api.us-west-1.amazonaws.com/Production/${id}`);
 
-    const data = response.data.body;
-
+    const data = response;
+    console.log(data.data)
     this.setState({
-      comments: data
+      comments: response.data
     });
   }
 
