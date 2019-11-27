@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function RestaurantInfoContainer(props) {
   return (
-    <div>
+    <div className='restaurant-info-container '>
       <h3 className="restaurant-name-title-single-page">{props.restaurant.restaurantName}</h3>
       <div className="restaurant-single-page-side-by-side">
         <div className="image-container-single-page">

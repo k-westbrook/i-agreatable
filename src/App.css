@@ -123,6 +123,7 @@ background-color:#F8F8FF;
   display: flex;
   flex-direction: column;
   width: 100vw;
+  align-items: center;
   }
 
 .header-restaurant{
@@ -177,9 +178,9 @@ padding-bottom: 15px;
 .restaurant-container{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   background-color:#F8F8FF;
   padding-bottom: 5vh;
+  width:90vw;
 }
 
 .restaurant-card{
@@ -231,12 +232,16 @@ padding-bottom: 15px;
 
 .restaurant-name-title-single-page{
   font-size: 8vh;
-  margin-bottom: 0vh;
-  margin-top: 0vh;
+  margin-bottom: 2vh;
 }
-
+.restaurant-info-container
+{
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 10vh;
+}
 .restaurant-info-single-page{
-  font-size: 5vh;
+  font-size: 6vh;
   line-height: 10vh;
   margin-top:0vh;
   flex-grow: 1;
@@ -265,8 +270,8 @@ padding-bottom: 15px;
 .restaurant-review-container{
   background-color:#F8F8FF;
   text-align: left;
-  margin-left:15vw;
-  margin-right:15vw;
+  margin-left:10vw;
+  margin-right:10vw;
   border-style: groove;
   margin-top: 5vh;
   padding-left:5vw;
@@ -358,6 +363,12 @@ font-family: 'Roboto Condensed';
 
 .comment-section{
 margin-bottom: 5vh;
+}
+
+.comment-text
+{
+  font-size: 4vh;
+  font-family: 'Roboto Condensed';
 }
 
 }
