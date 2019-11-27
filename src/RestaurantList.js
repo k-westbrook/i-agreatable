@@ -1,7 +1,5 @@
 import React from 'react';
 import './App.css';
-import FoodTypeFilter from './FoodFilter';
-import LocationFilter from './LocationFilter';
 import RestaurantContainer from './RestaurantContainer';
 import axios from 'axios';
 
@@ -50,18 +48,6 @@ class RestaurantList extends React.Component {
       <div >
 
         <p className="header-restaurant">Restaurant List</p>
-        <div className="filter-bar">
-
-          <div className="filter-item">
-            <p>Filter</p>
-          </div>
-          <div className="filter-item">
-            <FoodTypeFilter handleFoodFilterChange={this.handleFoodFilterChange} />
-          </div>
-          <div className="filter-item">
-            <LocationFilter handleLocationFilterChange={this.handleLocationFilterChange} />
-          </div>
-        </div>
         <div>
           <RestaurantContainer restaurants={this.state.restaurants} foodType={this.state.filterFoodType} location={this.state.filterLocation} />
         </div>
