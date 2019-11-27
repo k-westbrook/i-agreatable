@@ -7,6 +7,7 @@ class NavBar extends Component {
     return (
       <div>
         <div className="nav-bar">
+
           <div className='nav-link-box'>
             <Link className="link-nav" to='/'>
               <h4 className="nav-bar-link-text">Home</h4>
@@ -15,14 +16,12 @@ class NavBar extends Component {
 
           <div className='nav-link-box'>
             <Link className="link-nav" to='/thelist'>
-
               <h4 className="nav-bar-link-text">Restaurant List</h4>
-
-
             </Link>
           </div>
-        </div >
-      </div >
+
+        </div>
+      </div>
     );
   }
 }
