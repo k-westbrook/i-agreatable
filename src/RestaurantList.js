@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import RestaurantContainer from './RestaurantContainer';
+import RestaurantCardContainer from './RestaurantCardContainer';
 import axios from 'axios';
 import FilterContainer from './FilterContainer';
 
@@ -51,7 +51,7 @@ class RestaurantList extends React.Component {
         <p className="header-restaurant">Restaurant List</p>
         <FilterContainer handleFoodFilterChange={this.handleFoodFilterChange} handleLocationFilterChange={this.handleLocationFilterChange} />
         <div>
-          <RestaurantContainer restaurants={this.state.restaurants} foodType={this.state.filterFoodType} location={this.state.filterLocation} />
+          <RestaurantCardContainer restaurants={this.state.restaurants} foodType={this.state.filterFoodType} location={this.state.filterLocation} />
         </div>
 
       </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import RestaurantCard from './RestaurantCard';
 
-class RestaurantContainer extends React.Component {
+class RestaurantCardContainer extends React.Component {
 
 
   render() {
@@ -20,12 +20,9 @@ class RestaurantContainer extends React.Component {
             }
           })
           }
-          {(count === 0) ?
+          {(count === 0) &&
             <div className="no-restaurant-container">
               <h4>No restaurants in this category yet</h4>
-            </div>
-            :
-            <div>
             </div>
           }
         </div>
@@ -34,4 +31,4 @@ class RestaurantContainer extends React.Component {
   }
 }
 
-export default RestaurantContainer;
+export default RestaurantCardContainer;
