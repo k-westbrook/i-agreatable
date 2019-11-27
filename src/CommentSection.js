@@ -13,7 +13,7 @@ class CommentSection extends React.Component {
 
           return (
 
-            < div key={parseInt(comment.id)} className="comments-section">
+            < div key={parseInt(comment.id)} >
               <p><b>{comment.name}: </b> {comment.comment}</p>
             </div>
           )

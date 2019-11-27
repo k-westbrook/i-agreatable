@@ -312,11 +312,13 @@ padding-bottom: 15px;
 .leave-a-comment-text{
   text-align: left;
   font-size: 5vh;
-  margin-bottom: 0vh;
+  margin-bottom: 3vh;
 }
 .name-comment-container{
   display: flex;
   margin-bottom: 2vh;
+  font-family: 'Roboto Condensed';
+
 }
 
 .text-name{
@@ -331,7 +333,8 @@ padding-bottom: 15px;
   width: 20vw;
   height:5vh;
   font-size: 2.5vh;
-  font-family:"Cherry Swash";
+  font-family: 'Roboto Condensed';
+
 }
 
 .input-comment{
@@ -351,8 +354,8 @@ font-size:3.5vh;
 font-family: 'Roboto Condensed';
 }
 
-.comments-section{
-  font-size: 3.0vh;
+.comment-section{
+margin-bottom: 10vh;
 }
 
 }
