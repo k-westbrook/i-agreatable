@@ -2,7 +2,6 @@
   text-align: center;
   background-color: 	#F8F8FF;
   font-family: 'Cherry Swash';
-  height:100vh;
   width: 100vw;
 }
 
@@ -48,7 +47,7 @@ align-items: center;
 margin-left:8vw;
 margin-right:8vw;
 border-style:solid;
-background-color: 	#F8F8FF;
+background-color:#F8F8FF;
 }
 
 .nav-bar-link-text{
@@ -77,25 +76,40 @@ background-color: 	#F8F8FF;
 
 .homepage-instructions{
   text-align: left;
-  margin-left: 20vw;
-  margin-right:20vw;
-  padding:5vh;
+  display: flex;
+  flex-direction: column;
+  margin-left:15vw;
+  margin-right:15vw;
+
+  margin-bottom: 5vh;
+  padding:2vw;
 }
 
 .home-page{
   background-color:#F8F8FF;
   width: 100vw;
+  height:100vh;
 }
 
 .homepage-section-headers{
   font-size: 5vh;
-  margin-top:0px;
-  margin-bottom: 0px;
+  margin-top:2vh;
+  margin-bottom: 2vh;
 }
 
 .homepage-paragraph{
   font-size:3vh;
 }
+
+.homepage-photo{
+  width: 100vw;
+  height:60vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url('https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  }
 
 .filter-bar{
   display: flex;
@@ -246,12 +260,6 @@ color:black;
   border-style: groove;
   height: 100%;
   padding:1vh;
-}
-
-.homepage-photo{
-width: 100vw;
-height:400px;
-object-fit: cover;
 }
 
 .footer{

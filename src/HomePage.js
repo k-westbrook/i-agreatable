@@ -13,8 +13,7 @@ class HomePage extends React.Component {
           <h3 className="homepage-title">i-agreatable</h3>
           <p className="homepage-paragraph">Food Opinions...<b>do you agree?</b></p>
         </div>
-        <div>
-          <img className="homepage-photo" src="https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="burger" />
+        <div className='homepage-photo'>
         </div>
         <div className="homepage-instructions">
           <h4 className="homepage-section-headers">Welcome</h4>
