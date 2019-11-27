@@ -135,6 +135,7 @@ background-color:#F8F8FF;
 .filter-bar{
   display: flex;
   justify-content: center;
+  font-family: 'Roboto Condensed';
 }
 .filter-item{
   flex-grow: 1;
@@ -154,7 +155,7 @@ background-color:#F8F8FF;
 .filter-select{
   text-align: center;
   font-size: 20px;
-  font-family: 'Cherry Swash'
+  font-family: 'Roboto Condensed';
 }
 
 
@@ -196,6 +197,7 @@ padding-bottom: 15px;
   line-height: 40px;
   font-size:3.5vh;
   margin-top:2vh;
+  font-family: 'Roboto Condensed';
 }
 
 .no-restaurant-container{
