@@ -184,21 +184,26 @@ padding-bottom: 15px;
 
 .restaurant-card{
   border-style:groove;
-  height:70vh;
-  width: 60vh;
+  height:65vh;
+  width: 25vw;
   margin-top:5vh;
   margin-left:1vw;
   margin-right:1vw;
+  padding:1vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .restaurant-name-title{
-  font-size: 5vh;
+  font-size: 4vh;
+  height:10vh;
   margin-top:5vh;
-  margin-bottom:5vh;
+  margin-bottom:3vh;
 }
 
 .restaurant-short-info{
-  line-height: 40px;
+  line-height: 5vh;
   font-size:3.5vh;
   margin-top:2vh;
   font-family: 'Roboto Condensed';
@@ -211,11 +216,11 @@ padding-bottom: 15px;
 
 .link{
   text-decoration: none;
-color:black;
+ color:black;
 }
 .link:visited{
   text-decoration: none;
-color:black;
+  color:black;
 }
 
 
