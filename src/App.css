@@ -3,6 +3,9 @@
   background-color: 	#F8F8FF;
   font-family: 'Cherry Swash';
   width: 100vw;
+  min-height:100vh ;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -88,7 +91,7 @@ background-color:#F8F8FF;
 .home-page{
   background-color:#F8F8FF;
   width: 100vw;
-  height:100vh;
+
 }
 
 .homepage-section-headers{
