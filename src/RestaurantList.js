@@ -56,8 +56,8 @@ class RestaurantList extends React.Component {
   render() {
 
     return (
-      <div >
-        <p className="header-restaurant">Restaurant List</p>
+      <div className='restaurant-list'>
+        <h3 className="header-restaurant">Restaurant List</h3>
         <FilterContainer handleFoodFilterChange={this.handleFoodFilterChange} handleLocationFilterChange={this.handleLocationFilterChange} />
         <div>
           <RestaurantCardContainer restaurants={this.state.restaurants} foodType={this.state.filterFoodType} location={this.state.filterLocation} />
