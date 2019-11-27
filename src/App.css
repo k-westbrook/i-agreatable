@@ -265,12 +265,13 @@ padding-bottom: 15px;
 .restaurant-review-container{
   background-color:#F8F8FF;
   text-align: left;
-  margin-left:20vw;
-  margin-right:20vw;
+  margin-left:15vw;
+  margin-right:15vw;
   border-style: groove;
   margin-top: 5vh;
   padding-left:5vw;
   padding-right:5vw;
+  padding-bottom: 5vh;
 }
 
 .review-title-single-page{
@@ -285,10 +286,11 @@ padding-bottom: 15px;
 }
 
 .review-text{
-  font-size: 3vh;
+  font-size: 4vh;
   border-style: groove;
   height: 100%;
   padding:5vh;
+  font-family: 'Roboto Condensed';
 }
 
 .footer{
@@ -312,18 +314,18 @@ padding-bottom: 15px;
 .leave-a-comment-text{
   text-align: left;
   font-size: 5vh;
-  margin-bottom: 3vh;
+  margin-bottom: 5vh;
 }
 .name-comment-container{
   display: flex;
   margin-bottom: 2vh;
   font-family: 'Roboto Condensed';
-
+  align-items: center;
 }
 
 .text-name{
   margin-right:2vw;
-  font-size: 3vh;
+  font-size: 5vh;
     min-width: 10vw;
 
 }
@@ -332,7 +334,7 @@ padding-bottom: 15px;
   margin-top:2vh;
   width: 20vw;
   height:5vh;
-  font-size: 2.5vh;
+  font-size: 3vh;
   font-family: 'Roboto Condensed';
 
 }
@@ -340,9 +342,9 @@ padding-bottom: 15px;
 .input-comment{
   height:20vh;
   width:40vw;
-  font-size:2.5vh;
+  font-size :3.5vh;
   resize: none;
-  font-family:"Cherry Swash";
+  font-family: 'Roboto Condensed';
 }
 
 .submit-button{
@@ -355,7 +357,7 @@ font-family: 'Roboto Condensed';
 }
 
 .comment-section{
-margin-bottom: 10vh;
+margin-bottom: 5vh;
 }
 
 }
