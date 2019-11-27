@@ -3,15 +3,11 @@ import './App.css';
 
 class Footer extends React.Component {
 
-
-
   render() {
     return (
       <div className="footer">
-        <p>
-          Website brought to you by KW
-             2019
-</p>
+        <p>WebApp created by Katie Westbrook 2019<br />
+          Please check out personal site  <a className='link-footer' href='http://katherine-westbrook.com/'>by clicking here.</a>  </p>
       </div>
     );
   }

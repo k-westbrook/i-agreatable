@@ -270,8 +270,17 @@ color:black;
   color:white;
   height:10vh;
   padding-top:5vh;
-
 }
+.link-footer{
+  text-decoration: underline;
+  color:white;
+}
+
+.link-footer:visited{
+  text-decoration: underline;
+  color:white;
+}
+
 
 .leave-a-comment-text{
   text-align: left;
