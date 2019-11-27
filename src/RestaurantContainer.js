@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Link } from 'react-router-dom'
+import RestaurantCard from './RestaurantCard';
 
 class RestaurantContainer extends React.Component {
 
@@ -15,27 +15,7 @@ class RestaurantContainer extends React.Component {
             if ((this.props.foodType === "Select One" || this.props.foodType === restaurant.food_type) && (this.props.location === "Select One" || this.props.location === restaurant.location_name)) {
               count++;
               return (
-                <Link className="link" to={`/review/${restaurant.location_name}/${restaurant.food_type}/${restaurant.id}`} key={parseInt(restaurant.id)} >
-                  <div >
-                    <div className="restaurant-card">
-                      <h4 className="restaurant-name-title">{restaurant.restaurant_name}</h4>
-                      <img className="restaurant-photo" src={restaurant.photo_url} alt=" food" />
-                      <p className="restaurant-short-info">
-                        <b>Location: </b>{restaurant.location_name}
-                        <br />
-                        <b> Neighborhood: </b>
-                        {restaurant.neighborhood_name}
-                        <br />
-                        <b>
-                          Food Type:
-                        </b> {restaurant.food_type}
-                        <br />
-                        <b>Rating:</b> {restaurant.rating}
-                      </p>
-
-                    </div>
-                  </div>
-                </Link>
+                <RestaurantCard restaurant={restaurant} key={parseInt(restaurant.id)} />
               )
             }
           })
