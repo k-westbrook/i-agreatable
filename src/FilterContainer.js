@@ -10,7 +10,7 @@ export default function FilterContainer(props) {
       <div className="filter-bar">
 
         <div className="filter-item">
-          <p>Filter</p>
+          <p>Filter Options</p>
         </div>
         <div className="filter-item">
           <FoodTypeFilter handleFoodFilterChange={props.handleFoodFilterChange} />
