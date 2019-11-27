@@ -26,8 +26,7 @@ class SingleRestaurant extends React.Component {
   }
 
   async getSingleRestaurantRequest(id) {
-    const response = await axios.get(`https://0uz9m4vuz3.execute-api.us-west-1.amazonaws.com/Production/${id}`, { restaurantId: id });
-
+    const response = await axios.get(`https://0uz9m4vuz3.execute-api.us-west-1.amazonaws.com/Production/${id}`);
     const data = response.data[0];
 
     this.setState({
@@ -42,6 +41,7 @@ class SingleRestaurant extends React.Component {
   }
 
   async getSingleRestaurantComments(id) {
+
     const response = await axios.get(`https://wg49ryzop8.execute-api.us-west-1.amazonaws.com/Production/${id}`);
 
     this.setState({
@@ -57,9 +57,9 @@ class SingleRestaurant extends React.Component {
     const comment = evt.target.comment.value;
     const results = await axios.post(`https://wg49ryzop8.execute-api.us-west-1.amazonaws.com/Production/`, { restaurant_id: restaurantId, name, comment })
     evt.persist();
-
+    console.log(results)
     const newComment = {
-      restaurantId, id: results.data.body[0].id, name, comment
+      restaurantId, id: results.data.body[0].comment_id, name, comment
     }
 
     const newCommentArray = [...this.state.comments, newComment];

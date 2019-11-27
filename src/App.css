@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: 	#F8F8FF;
+  background-color:	#F5F5F5;
   font-family: 'Cherry Swash';
   width: 100vw;
   min-height:100vh ;
@@ -42,7 +42,7 @@
 }
 
 .nav-link-box{
-width:30vw;
+min-width:30vw;
 height:10vh;
 display:flex;
 justify-content: center;
@@ -50,7 +50,7 @@ align-items: center;
 margin-left:8vw;
 margin-right:8vw;
 border-style:solid;
-background-color:#F8F8FF;
+background-color:	#F5F5F5;
 }
 
 .nav-bar-link-text{
@@ -88,7 +88,7 @@ background-color:#F8F8FF;
 }
 
 .home-page{
-  background-color:#F8F8FF;
+  background-color:	#F5F5F5;
   width: 100vw;
 
 }
@@ -179,7 +179,7 @@ padding-bottom: 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color:#F8F8FF;
+  background-color:	#F5F5F5;
   padding-bottom: 5vh;
   width:90vw;
 }
@@ -194,6 +194,9 @@ padding-bottom: 15px;
   flex-direction: column;
   align-items: center;
 
+  -webkit-box-shadow: 3px 3px 5px 1px #ccc;
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
 }
 
 .restaurant-name-title{
@@ -206,6 +209,7 @@ padding-bottom: 15px;
 .restaurant-short-info{
   height:30vh;
   font-size:3.5vh;
+  line-height: 4.5vh;
   margin-top:2vh;
   font-family: 'Roboto Condensed';
 }
@@ -251,6 +255,9 @@ padding-bottom: 15px;
 .restaurant-photo-single-page{
   height:60vh;
   width:40vw;
+  -webkit-box-shadow: 3px 3px 5px 1px #ccc;
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
 }
 
 .image-container-single-page
@@ -267,7 +274,7 @@ padding-bottom: 15px;
 }
 
 .restaurant-review-container{
-  background-color:#F8F8FF;
+  background-color:	#F5F5F5;
   text-align: left;
   margin-left:10vw;
   margin-right:10vw;
@@ -276,6 +283,7 @@ padding-bottom: 15px;
   padding-left:5vw;
   padding-right:5vw;
   padding-bottom: 5vh;
+  padding-top: 5vh;
 }
 
 .review-title-single-page{
@@ -285,7 +293,7 @@ padding-bottom: 15px;
 
 }
 .single-page{
-  background-color:#F8F8FF;
+  background-color:	#F5F5F5;
   padding-bottom:5vh;
 }
 
@@ -330,8 +338,7 @@ padding-bottom: 15px;
 .text-name{
   margin-right:2vw;
   font-size: 5vh;
-    min-width: 10vw;
-
+   min-width: 10vw;
 }
 
 .input-name-comment{

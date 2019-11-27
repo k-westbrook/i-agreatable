@@ -17,7 +17,7 @@ export default function RestaurantInfoContainer(props) {
             <br />
             <b> Food Type:</b> {props.restaurant.foodType}
             <br />
-            <b>Rating: </b>{props.restaurant.rating}
+            <b>Rating by Me: </b>{props.restaurant.rating}
           </p>
         </div>
       </div>
