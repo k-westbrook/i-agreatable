@@ -42,7 +42,7 @@ class RestaurantList extends React.Component {
     })
   }
   componentDidMount() {
-    this.getRest();
+    this.getRestaurants();
   }
   render() {
 
