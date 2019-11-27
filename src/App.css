@@ -34,13 +34,23 @@
   display: flex;
   color:black;
   background-color: #333333;
+  height:20vh;
+  align-items: center;
+  justify-content: center;
 
 }
 
 .nav-link-box{
-flex-grow:1;
-margin-left:10vw;
-margin-right: 10vw;
+width:30vw;
+height:10vh;
+display:flex;
+justify-content: center;
+align-items: center;
+margin-left:8vw;
+margin-right:8vw;
+border-style:solid;
+background-color: 	#F8F8FF;
+
 }
 
 .nav-bar:visited{
@@ -49,10 +59,10 @@ color:black;
 }
 
 .nav-bar-link-text{
-  border-style:solid;
+
   font-size:5vh;
   padding: 2vh;
-  background-color: 	#F8F8FF;
+
 }
 
 .link-text{
