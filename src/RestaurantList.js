@@ -17,9 +17,9 @@ class RestaurantList extends React.Component {
     }
     this.handleFoodFilterChange = this.handleFoodFilterChange.bind(this);
     this.handleLocationFilterChange = this.handleLocationFilterChange.bind(this);
-    this.getRest = this.getRest.bind(this);
+    this.getRestaurants = this.getRestaurants.bind(this);
   }
-  async getRest() {
+  async getRestaurants() {
     let result = await axios.get(
       "https://0uz9m4vuz3.execute-api.us-west-1.amazonaws.com/Production"
     )
