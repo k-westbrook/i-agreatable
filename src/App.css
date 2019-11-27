@@ -278,12 +278,14 @@ padding-bottom: 15px;
   text-align: left;
   margin-left:10vw;
   margin-right:10vw;
-  border-style: groove;
   margin-top: 5vh;
   padding-left:5vw;
   padding-right:5vw;
   padding-bottom: 5vh;
   padding-top: 5vh;
+  border-style: groove;
+  border-color: black;
+  border-width: 2px;
 }
 
 .review-title-single-page{
@@ -303,6 +305,9 @@ padding-bottom: 15px;
   height: 100%;
   padding:5vh;
   font-family: 'Roboto Condensed';
+  border-style: groove;
+  border-color: black;
+  border-width: 2px;
 }
 
 .footer{
@@ -347,6 +352,9 @@ padding-bottom: 15px;
   height:5vh;
   font-size: 3vh;
   font-family: 'Roboto Condensed';
+  border-style: groove;
+  border-color: black;
+  border-width: 2px;
 
 }
 
@@ -356,6 +364,9 @@ padding-bottom: 15px;
   font-size :3.5vh;
   resize: none;
   font-family: 'Roboto Condensed';
+  border-style: groove;
+  border-color: black;
+  border-width: 2px;
 }
 
 .submit-button{
@@ -365,6 +376,11 @@ height:8vh;
 width:50%;
 font-size:3.5vh;
 font-family: 'Roboto Condensed';
+background-color: lightgray;
+border-style: groove;
+border-color: black;
+border-width: 2px;
+border-radius: 3px;
 }
 
 .comment-section{
