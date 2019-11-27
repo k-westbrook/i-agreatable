@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import RestaurantContainer from './RestaurantContainer';
 import axios from 'axios';
+import FilterContainer from './FilterContainer';
 
 
 class RestaurantList extends React.Component {
@@ -48,6 +49,7 @@ class RestaurantList extends React.Component {
       <div >
 
         <p className="header-restaurant">Restaurant List</p>
+        <FilterContainer />
         <div>
           <RestaurantContainer restaurants={this.state.restaurants} foodType={this.state.filterFoodType} location={this.state.filterLocation} />
         </div>
