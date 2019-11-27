@@ -3,6 +3,7 @@ import './App.css';
 import axios from 'axios';
 import CommentForm from './CommentForm';
 import CommentSection from './CommentSection';
+import RestaurantInfoContainer from './RestaurantInfoContainer';
 
 
 class SingleRestaurant extends React.Component {
@@ -83,23 +84,8 @@ class SingleRestaurant extends React.Component {
       <div className="single-page">
         {this.state.restaurantId ?
           <div>
-            <h3 className="restaurant-name-title-single-page">{this.state.restaurantName}</h3>
-            <div className="restaurant-single-page-side-by-side">
-              <div className="image-container-single-page">
-                <img className="restaurant-photo-single-page" src={this.state.photoURL} alt=" restaurant_pic" />
-              </div>
-              <div className="restaurant-info-single-page">
-                <p>
-                  <b>Location:</b> {this.state.location}
-                  <br />
-                  <b> Neighborhood: </b>{this.state.neighborhood}
-                  <br />
-                  <b> Food Type:</b> {this.state.foodType}
-                  <br />
-                  <b>Rating: </b>{this.state.rating} </p>
-              </div>
+            <RestaurantInfoContainer restaurant={this.state} />
 
-            </div>
             <div className="restaurant-review-container">
               <h4 className="review-title-single-page">Review</h4>
               {(this.state.review !== null) ?
