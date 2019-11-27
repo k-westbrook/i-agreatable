@@ -49,7 +49,7 @@ class RestaurantList extends React.Component {
       <div >
 
         <p className="header-restaurant">Restaurant List</p>
-        <FilterContainer />
+        <FilterContainer handleFoodFilterChange={this.handleFoodFilterChange} handleLocationFilterChange={this.handleLocationFilterChange} />
         <div>
           <RestaurantContainer restaurants={this.state.restaurants} foodType={this.state.filterFoodType} location={this.state.filterLocation} />
         </div>
