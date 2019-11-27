@@ -4,6 +4,7 @@ import axios from 'axios';
 import CommentForm from './CommentForm';
 import CommentSection from './CommentSection';
 import RestaurantInfoContainer from './RestaurantInfoContainer';
+import RestaurantReviewContainer from './RestaurantReviewContainer';
 
 
 class SingleRestaurant extends React.Component {
@@ -85,22 +86,7 @@ class SingleRestaurant extends React.Component {
         {this.state.restaurantId ?
           <div>
             <RestaurantInfoContainer restaurant={this.state} />
-
-            <div className="restaurant-review-container">
-              <h4 className="review-title-single-page">Review</h4>
-              {(this.state.review !== null) ?
-                <p className="review-text">
-                  {this.state.review}
-                </p>
-                :
-                <p className="review-text">
-                  No review yet!
-              </p>
-              }
-              <CommentForm handleSubmit={this.handleSubmit} />
-              <CommentSection comments={this.state.comments} />
-            </div>
-
+            <RestaurantReviewContainer comments={this.state.comments} review={this.state.review} handleSubmit={this.handleSubmit} />
           </div>
           :
           <div>
