@@ -330,7 +330,7 @@ padding-bottom: 15px;
 
 .leave-a-comment-text{
   text-align: left;
-  font-size: 5vh;
+  font-size: 6vh;
   margin-bottom: 5vh;
 }
 .name-comment-container{
@@ -387,12 +387,15 @@ border-radius: 3px;
 margin-bottom: 5vh;
 }
 
-.comment-text
+.comment-container
 {
-  font-size: 4vh;
+  font-size: 3vh;
   font-family: 'Roboto Condensed';
-}
+  width:60vw;
+  word-wrap: break-word;
+  padding:1vh;
 
+}
 }
 
 

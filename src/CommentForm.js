@@ -16,7 +16,7 @@ class CommentForm extends React.Component {
               <p>Name</p>
             </div>
             <div >
-              <input required="required" type="text" name="userName" className="input-name-comment" />
+              <input required="required" type="text" name="userName" maxlength='20' className="input-name-comment" />
             </div>
           </div>
           <div className='name-comment-container'>
@@ -24,7 +24,7 @@ class CommentForm extends React.Component {
               <p>Comment</p>
             </div>
             <div >
-              <textarea required="required" name="comment" className="input-comment"></textarea>
+              <textarea required="required" maxlength='100' name="comment" className="input-comment"></textarea>
             </div>
           </div>
           <button className="submit-button">Submit your comment!</button>
