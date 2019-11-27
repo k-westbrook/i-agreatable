@@ -69,9 +69,8 @@ background-color:#F8F8FF;
 }
 
 .homepage-title{
-  font-size: 8vh;
+  font-size: 10vh;
   margin-bottom:3vh;
-  margin-top: 3vh;
   font-family: 'Love Ya Like A Sister';
   border-top-style: solid;
   border-bottom-style: solid;
@@ -84,7 +83,7 @@ background-color:#F8F8FF;
   margin-left:15vw;
   margin-right:15vw;
   margin-bottom: 5vh;
-  padding:2vw;
+  padding:1vh;
 
 }
 
@@ -95,13 +94,19 @@ background-color:#F8F8FF;
 }
 
 .homepage-section-headers{
-  font-size: 5vh;
-  margin-top:2vh;
-  margin-bottom: 2vh;
+  font-size: 6vh;
+  margin-top: 0. 5vh;
+  margin-bottom: 0.5vh;
+  border-bottom-style: solid;
+}
+
+.homepage-tag-line{
+  font-size:3.5vh;
 }
 
 .homepage-paragraph{
-  font-size:3vh;
+  font-size:4vh;
+  font-family: 'Roboto Condensed';
 }
 
 .homepage-photo{
@@ -278,7 +283,8 @@ color:black;
   background-color: #333333;
   color:white;
   height:10vh;
-  padding-top:5vh;
+  padding-top:2vh;
+  padding-bottom: 3vh;
 }
 .link-footer{
   text-decoration: underline;

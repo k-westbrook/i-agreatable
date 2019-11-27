@@ -11,7 +11,7 @@ class HomePage extends React.Component {
       <div className="home-page">
         <div>
           <h3 className="homepage-title">i-agreatable</h3>
-          <p className="homepage-paragraph">Food Opinions...<b>do you agree?</b></p>
+          <p className="homepage-tag-line">Food Opinions...<b>do you agree?</b></p>
         </div>
         <div className='homepage-photo'>
         </div>
