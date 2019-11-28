@@ -25,6 +25,7 @@ class SingleRestaurant extends React.Component {
     }
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleRating = this.handleRating.bind(this);
+    this.handleRatingSubmit = this.handleRatingSubmit.bind(this);
   }
 
   async getSingleRestaurantRequest(id) {
@@ -97,7 +98,7 @@ class SingleRestaurant extends React.Component {
         {this.state.restaurantId ?
           <div>
             <RestaurantInfoContainer restaurant={this.state} />
-            <RestaurantReviewContainer handleRating={this.handleRating} comments={this.state.comments} review={this.state.review} handleSubmit={this.handleSubmit} personalRating={this.state.personalRating} />
+            <RestaurantReviewContainer handleRating={this.handleRating} comments={this.state.comments} review={this.state.review} handleSubmit={this.handleSubmit} personalRating={this.state.personalRating} handleRatingSubmit={this.handleRatingSubmit} />
           </div>
           :
           <div>
