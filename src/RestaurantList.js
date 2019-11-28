@@ -24,7 +24,6 @@ class RestaurantList extends React.Component {
     let result = await axios.get(
       "https://0uz9m4vuz3.execute-api.us-west-1.amazonaws.com/Production"
     )
-
     this.setState({ restaurants: result.data.body });
 
   }
