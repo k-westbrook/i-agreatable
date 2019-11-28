@@ -21,7 +21,10 @@ class SingleRestaurant extends React.Component {
       rating: null,
       review: '',
       comments: [],
-      personalRating: 1
+      personalRating: 1,
+      userRatingTotal: null,
+      userRatingNumber: 0,
+      userRatingAverage: 0
     }
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleRating = this.handleRating.bind(this);
@@ -60,7 +63,6 @@ class SingleRestaurant extends React.Component {
     const comment = evt.target.comment.value;
     const results = await axios.post(`https://wg49ryzop8.execute-api.us-west-1.amazonaws.com/Production/`, { restaurant_id: restaurantId, name, comment })
     evt.persist();
-    console.log(results)
     const newComment = {
       restaurantId, id: results.data.body[0].comment_id, name, comment
     }
@@ -78,9 +80,21 @@ class SingleRestaurant extends React.Component {
     this.setState({ personalRating: personalRating })
   }
 
-  handleRatingSubmit() {
+  async handleRatingSubmit() {
 
-    console.log(this.state.personalRating)
+    const results = await axios.post(`https://c98in2pn44.execute-api.us-west-1.amazonaws.com/PROD`, { restaurant_id: this.state.restaurantId, rating: this.state.personalRating })
+
+    let newUserRatingNumber = this.state.userRatingNumber + 1;
+    let newUserRatingTotal = this.state.userRatingTotal + this.state.personalRating;
+
+    let newUserRatingAverage = newUserRatingTotal / newUserRatingNumber;
+
+    this.setState({
+      userRatingTotal: newUserRatingTotal,
+      userRatingNumber: newUserRatingNumber,
+      userRatingAverage: newUserRatingAverage
+    })
+
   }
 
   componentDidMount() {
@@ -92,6 +106,7 @@ class SingleRestaurant extends React.Component {
     this.getSingleRestaurantComments(restaurantId);
   }
   render() {
+    console.log(this.state.userRatingAverage)
 
     return (
 
