@@ -20,9 +20,11 @@ class SingleRestaurant extends React.Component {
       photoURL: '',
       rating: null,
       review: '',
-      comments: []
+      comments: [],
+      personalRating: 0
     }
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleRating = this.handleRating.bind(this);
   }
 
   async getSingleRestaurantRequest(id) {
@@ -69,6 +71,12 @@ class SingleRestaurant extends React.Component {
     })
   }
 
+  handleRating(evt) {
+
+    let personalRating = parseInt(evt.target.value);
+    this.setState({ personalRating: personalRating })
+  }
+
 
   componentDidMount() {
     const restaurantId = this.props.match.params.id;
@@ -86,7 +94,7 @@ class SingleRestaurant extends React.Component {
         {this.state.restaurantId ?
           <div>
             <RestaurantInfoContainer restaurant={this.state} />
-            <RestaurantReviewContainer comments={this.state.comments} review={this.state.review} handleSubmit={this.handleSubmit} />
+            <RestaurantReviewContainer handleRating={this.handleRating} comments={this.state.comments} review={this.state.review} handleSubmit={this.handleSubmit} personalRating={this.state.personalRating} />
           </div>
           :
           <div>
