@@ -80,6 +80,7 @@ class SingleRestaurant extends React.Component {
 
   handleRatingSubmit() {
 
+    console.log(this.state.personalRating)
   }
 
   componentDidMount() {
