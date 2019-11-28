@@ -305,11 +305,30 @@ padding-bottom: 15px;
   height: 100%;
   padding:5vh;
   font-family: 'Roboto Condensed';
-  border-style: groove;
   border-color: black;
   border-width: 2px;
 }
 
+.rating-container
+{
+  display: flex;
+  align-items: center;
+  border-style: groove;
+}
+
+.rating{
+  margin-left:2vw;
+}
+.rating-label
+{
+  text-align: left;
+  font-size: 6vh;
+}
+.rating-button{
+  font-size: 4vh;
+  font-family: 'Roboto Condensed';
+  margin-left:2vw;
+}
 .footer{
   background-color: #333333;
   color:white;

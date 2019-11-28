@@ -6,9 +6,10 @@ function RatingContainerForm(props) {
 
   return (
 
-    <div>
-      <h4 className='leave-a-comment-text'>Rate It</h4>
-      <Rating onChange={props.handleRating} name='rating' size='large' value={props.personalRating} />
+    <div className='rating-container' >
+      <h4 className='rating-label'>Rate The Restaurant</h4>
+      <Rating onChange={props.handleRating} className='rating' size='large' value={props.personalRating} />
+      <button className='rating-button' type='submit' onSubmit={props.handleRatingSubmit}>Submit Rating</button>
     </div>
   )
 }

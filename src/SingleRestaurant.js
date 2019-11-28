@@ -21,7 +21,7 @@ class SingleRestaurant extends React.Component {
       rating: null,
       review: '',
       comments: [],
-      personalRating: 0
+      personalRating: 1
     }
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleRating = this.handleRating.bind(this);
@@ -77,6 +77,9 @@ class SingleRestaurant extends React.Component {
     this.setState({ personalRating: personalRating })
   }
 
+  handleRatingSubmit() {
+
+  }
 
   componentDidMount() {
     const restaurantId = this.props.match.params.id;
