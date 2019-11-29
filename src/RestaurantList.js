@@ -27,6 +27,7 @@ class RestaurantList extends React.Component {
       "https://0uz9m4vuz3.execute-api.us-west-1.amazonaws.com/Production"
     )
 
+
     this.setState({
       restaurants: result.data.body.restaurantList,
       foodTypeFilterList: result.data.body.foodTypeFilterList,

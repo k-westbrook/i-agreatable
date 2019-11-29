@@ -11,7 +11,7 @@ function FoodTypeFilter(props) {
                 <select onChange={props.handleFoodFilterChange} className="filter-select">
                     {props.foodTypeFilterList.map((foodObject, index) => {
                         return (
-                            <option value={foodObject.food_type}>{foodObject.food_type}</option>
+                            <option key={index} value={foodObject.food_type}>{foodObject.food_type}</option>
                         )
                     })}
 
