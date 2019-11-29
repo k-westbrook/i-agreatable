@@ -422,6 +422,12 @@ margin-bottom: 5vh;
   padding:1vh;
 
 }
+
+.comment-text
+{
+  font-size: 4vh;
+  font-family: 'Roboto Condensed';
+}
 }
 
 
