@@ -13,10 +13,10 @@ export default function FilterContainer(props) {
           <p>Filter Options</p>
         </div>
         <div className="filter-item">
-          <FoodTypeFilter handleFoodFilterChange={props.handleFoodFilterChange} />
+          <FoodTypeFilter foodTypeFilterList={props.foodTypeFilterList} handleFoodFilterChange={props.handleFoodFilterChange} />
         </div>
         <div className="filter-item">
-          <LocationFilter handleLocationFilterChange={props.handleLocationFilterChange} />
+          <LocationFilter locationFilterList={props.locationFilterList} handleLocationFilterChange={props.handleLocationFilterChange} />
         </div>
       </div>
 
