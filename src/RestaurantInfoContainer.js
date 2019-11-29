@@ -19,7 +19,15 @@ export default function RestaurantInfoContainer(props) {
             <br />
             <b>Rating by Me: </b>{props.restaurant.rating}
             <br />
-            <b>Average User Rating: </b>{props.restaurant.userRatingAverage}
+            {(props.restaurant.userRatingAverage) ?
+              <div>
+                <b>Average User Rating: </b>{props.restaurant.userRatingAverage}
+              </div>
+              :
+              <div>
+                <b>Average User Rating: </b>No Ratings Yet
+              </div>
+            }
           </p>
         </div>
       </div>
