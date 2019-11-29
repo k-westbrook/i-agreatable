@@ -46,6 +46,12 @@ class SingleRestaurant extends React.Component {
     })
   }
 
+  async getSingleRestaurantsRatings(id) {
+    const response = await axios.get(`https://c98in2pn44.execute-api.us-west-1.amazonaws.com/PROD/${id}`);
+
+    console.log(response)
+  }
+
   async getSingleRestaurantComments(id) {
 
     const response = await axios.get(`https://wg49ryzop8.execute-api.us-west-1.amazonaws.com/Production/${id}`);
@@ -94,7 +100,7 @@ class SingleRestaurant extends React.Component {
       userRatingNumber: newUserRatingNumber,
       userRatingAverage: newUserRatingAverage
     })
-
+    console.log(results)
   }
 
   componentDidMount() {
@@ -104,9 +110,9 @@ class SingleRestaurant extends React.Component {
     })
     this.getSingleRestaurantRequest(restaurantId);
     this.getSingleRestaurantComments(restaurantId);
+    this.getSingleRestaurantsRatings(restaurantId);
   }
   render() {
-    console.log(this.state.userRatingAverage)
 
     return (
 
