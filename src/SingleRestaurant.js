@@ -53,7 +53,7 @@ class SingleRestaurant extends React.Component {
     this.setState({
       userRatingTotal: response.data.userRatingTotal,
       userRatingNumber: response.data.userRatingNumber,
-      userRatingAverage: response.data.userRatingAverage
+      userRatingAverage: Math.round(10 * response.data.userRatingAverage) / 10
     })
 
   }
@@ -99,7 +99,8 @@ class SingleRestaurant extends React.Component {
     let newUserRatingNumber = this.state.userRatingNumber + 1;
     let newUserRatingTotal = this.state.userRatingTotal + this.state.personalRating;
 
-    let newUserRatingAverage = newUserRatingTotal / newUserRatingNumber;
+    let newUserRatingAverage = Math.round((newUserRatingTotal / newUserRatingNumber) * 10) / 10;
+
 
     this.setState({
       userRatingTotal: newUserRatingTotal,
