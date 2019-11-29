@@ -49,7 +49,13 @@ class SingleRestaurant extends React.Component {
   async getSingleRestaurantsRatings(id) {
     const response = await axios.get(`https://c98in2pn44.execute-api.us-west-1.amazonaws.com/PROD/${id}`);
 
-    console.log(response)
+
+    this.setState({
+      userRatingTotal: response.data.userRatingTotal,
+      userRatingNumber: response.data.userRatingNumber,
+      userRatingAverage: response.data.userRatingAverage
+    })
+
   }
 
   async getSingleRestaurantComments(id) {
@@ -100,7 +106,6 @@ class SingleRestaurant extends React.Component {
       userRatingNumber: newUserRatingNumber,
       userRatingAverage: newUserRatingAverage
     })
-    console.log(results)
   }
 
   componentDidMount() {
