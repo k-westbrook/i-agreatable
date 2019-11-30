@@ -10,6 +10,7 @@ function LocationFilter(props) {
             </div>
             <div className='select-box-div'>
                 <select onChange={props.handleLocationFilterChange} className="filter-select">
+                    <option value='Select One'>Select One</option>
                     {props.locationFilterList.map((locationObject, index) => {
                         return (
                             <option key={index} value={locationObject.location_name}>{locationObject.location_name}</option>

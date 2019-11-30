@@ -9,6 +9,7 @@ function FoodTypeFilter(props) {
             </div>
             <div className='select-box-div'>
                 <select onChange={props.handleFoodFilterChange} className="filter-select">
+                    <option value='Select One'>Select One</option>
                     {props.foodTypeFilterList.map((foodObject, index) => {
                         return (
                             <option key={index} value={foodObject.food_type}>{foodObject.food_type}</option>
