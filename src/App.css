@@ -313,7 +313,6 @@ padding-bottom: 15px;
 {
   display: flex;
   align-items: center;
-  border-style: groove;
 }
 
 .rating{
@@ -429,8 +428,6 @@ margin-bottom: 5vh;
   font-family: 'Roboto Condensed';
 }
 }
-
-
 
 @media only screen and (max-width: 600px) {
 
