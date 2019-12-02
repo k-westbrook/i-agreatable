@@ -444,14 +444,14 @@ margin-bottom: 5vh;
     display: flex;
     color:black;
     background-color: #333333;
-    height:10vh;
+    height:15vh;
     align-items: center;
     justify-content: center;
   }
 
   .nav-link-box{
  width:40vw;
-  height:5vh;
+  height:10vh;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -534,12 +534,13 @@ margin-bottom: 5vh;
 
   .header-restaurant{
     font-size: 5.5vh;
-    margin:0;
-    padding:2vh;
+    margin:0vw;
+    border-bottom-style: solid;
   }
 
   .filter-bar{
     display: flex;
+    flex-direction: column;
     width: 100vw;
     justify-content: center;
     font-family: 'Roboto Condensed';
@@ -548,15 +549,15 @@ margin-bottom: 5vh;
     flex-grow: 1;
     display: flex;
     flex-direction: row;
-    font-size: 4vh;
-    border-style: solid;
+    font-size: 3vh;
+    border-bottom-style: solid;;
     justify-content: center;
     align-items: center;
   }
 
   .filter-container{
     display: flex;
-    height:10vh;
+    height:8vh;
     justify-content: center;
     align-items: center;
   }
@@ -564,19 +565,20 @@ margin-bottom: 5vh;
 
   .filter-select{
     text-align: center;
-    font-size: 4vh;
+    font-size: 3vh;
     font-family: 'Roboto Condensed';
+    width:50vw;
   }
 
 
   .filter-text{
     display: flex;
-    margin-right: 5px;
+    margin-right: 10px;
   }
 
   .select-box-div{
-  padding-top:18px;
-  padding-bottom: 15px;
+  padding-top:5px;
+  padding-bottom: 5px;
   }
 
 
