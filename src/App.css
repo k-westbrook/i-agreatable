@@ -642,33 +642,34 @@ margin-bottom: 5vh;
 
 
   .restaurant-name-title-single-page{
-    font-size: 6vh;
-    margin-bottom: 2vh;
+    font-size: 7vh;
+    margin-bottom: 1vh;
     margin-top: 0vh;
   }
   .restaurant-info-container
   {
     display:flex;
     flex-direction: column;
-    margin-bottom: 5vh;
-    margin-top:5vh;
-    justify-content: center;
+    margin-bottom: 1vh;
+    margin-top:1vh;
+  align-items: center;
     width:100vw;
 
   }
   .restaurant-info-single-page{
-    font-size: 6vh;
-    line-height: 10vh;
+    font-size: 4vh;
+    line-height: 5vh;
     margin-top:0vh;
-    width:50vw;
+    width:90vw;
+    padding-left: 10vw;
     text-align: left;
     font-family: 'Roboto Condensed';
-    padding-left:2vw;
+
   }
 
   .restaurant-photo-single-page{
-  height: 50%;
-    width:60%;
+    height: 100%;
+    width:80%;
     -webkit-box-shadow: 3px 3px 5px 1px #ccc;
     -moz-box-shadow:    3px 3px 5px 6px #ccc;
     box-shadow:         3px 3px 5px 6px #ccc;
@@ -676,12 +677,11 @@ margin-bottom: 5vh;
 
   .image-container-single-page
   {
-    width:50vw;
+    width:80vw;
     display: flex;
-    flex-direction: row-reverse;
-    padding-top:5vh;
-    padding-bottom: 5vh;
-    padding-right:5vw;
+    padding-top:2vh;
+    padding-bottom: 2vh;
+    justify-content: center;
   }
 
   .restaurant-single-page-side-by-side
@@ -695,13 +695,13 @@ margin-bottom: 5vh;
   .restaurant-review-container{
     background-color:	#F5F5F5;
     text-align: left;
-    margin-left:10vw;
-    margin-right:10vw;
-    margin-top: 5vh;
-    padding-left:5vw;
-    padding-right:5vw;
+    margin-left:5vw;
+    margin-right:5vw;
+    margin-top: 3vh;
+    padding-left:3vw;
+    padding-right:3vw;
     padding-bottom: 5vh;
-    padding-top: 5vh;
+    padding-top: 2vh;
     border-style: groove;
     border-color: black;
     border-width: 2px;
@@ -709,8 +709,8 @@ margin-bottom: 5vh;
 
   .review-title-single-page{
     text-align: left;
-    font-size: 6vh;
-    margin-top: 2vh;
+    font-size: 5vh;
+    margin-top: 1vh;
 
   }
   .single-page{
@@ -720,10 +720,10 @@ margin-bottom: 5vh;
   }
 
   .review-text{
-    font-size: 4vh;
+    font-size: 3vh;
     border-style: groove;
     height: 100%;
-    padding:5vh;
+    padding:2vh;
     font-family: 'Roboto Condensed';
     border-color: black;
     border-width: 2px;
@@ -733,18 +733,21 @@ margin-bottom: 5vh;
   {
     display: flex;
     align-items: center;
+    flex-direction: column;
   }
 
   .rating{
-    margin-left:2vw;
+    margin-bottom:2vh;
+
   }
   .rating-label
   {
-    text-align: left;
-    font-size: 6vh;
+    text-align: center;
+    font-size: 3.5vh;
+    margin-bottom: 1vh;
   }
   .rating-button{
-    font-size: 4vh;
+    font-size: 3vh;
     font-family: 'Roboto Condensed';
     margin-left:2vw;
     background-color: lightgray;
@@ -752,7 +755,7 @@ margin-bottom: 5vh;
     border-color: black;
     border-width: 2px;
     border-radius: 3px;
-    width:15vw;
+    width:70vw;
     font-size:3.5vh;
   }
   .footer{
