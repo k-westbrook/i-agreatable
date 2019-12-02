@@ -122,7 +122,7 @@ class SingleRestaurant extends React.Component {
     this.getSingleRestaurantsRatings(restaurantId);
   }
   render() {
-
+    console.log(this.state.photoURL)
     return (
 
       <div className="single-page">
