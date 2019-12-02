@@ -235,14 +235,16 @@ padding-bottom: 15px;
 
 
 .restaurant-name-title-single-page{
-  font-size: 8vh;
+  font-size: 9vh;
   margin-bottom: 2vh;
+  margin-top: 0vh;
 }
 .restaurant-info-container
 {
   display:flex;
   flex-direction: column;
   margin-bottom: 10vh;
+  margin-top:5vh;
 
 }
 .restaurant-info-single-page{
@@ -256,8 +258,8 @@ padding-bottom: 15px;
 }
 
 .restaurant-photo-single-page{
-  max-height: 90%;
-  width:70%;
+height: 50%;
+  width:60%;
   -webkit-box-shadow: 3px 3px 5px 1px #ccc;
   -moz-box-shadow:    3px 3px 5px 6px #ccc;
   box-shadow:         3px 3px 5px 6px #ccc;
@@ -265,17 +267,19 @@ padding-bottom: 15px;
 
 .image-container-single-page
 {
-  text-align: right;
   width:50vw;
   display: flex;
   flex-direction: row-reverse;
-  padding-right:10vw;
+  padding-top:5vh;
+  padding-bottom: 5vh;
+  padding-right:5vw;
 }
 
 .restaurant-single-page-side-by-side
 {
-  margin-top:5vh;
+  margin-top:2vh;
   display: flex;
+  align-items: center;
 }
 
 .restaurant-review-container{
