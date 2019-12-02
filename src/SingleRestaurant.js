@@ -23,8 +23,8 @@ class SingleRestaurant extends React.Component {
       comments: [],
       personalRating: 1,
       userRatingTotal: null,
-      userRatingNumber: 0,
-      userRatingAverage: 0
+      userRatingNumber: null,
+      userRatingAverage: null
     }
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleRating = this.handleRating.bind(this);
@@ -49,13 +49,19 @@ class SingleRestaurant extends React.Component {
   async getSingleRestaurantsRatings(id) {
     const response = await axios.get(`https://c98in2pn44.execute-api.us-west-1.amazonaws.com/PROD/${id}`);
 
-
-    this.setState({
-      userRatingTotal: response.data.userRatingTotal,
-      userRatingNumber: response.data.userRatingNumber,
-      userRatingAverage: Math.round(10 * response.data.userRatingAverage) / 10
-    })
-
+    if (response.data.userRatingNumber > 0) {
+      this.setState({
+        userRatingTotal: response.data.userRatingTotal,
+        userRatingNumber: response.data.userRatingNumber,
+        userRatingAverage: Math.round(10 * response.data.userRatingAverage) / 10
+      })
+    } else {
+      this.setState({
+        userRatingTotal: response.data.userRatingTotal,
+        userRatingNumber: response.data.userRatingNumber,
+        userRatingAverage: response.data.userRatingAverage
+      })
+    }
   }
 
   async getSingleRestaurantComments(id) {
@@ -110,6 +116,7 @@ class SingleRestaurant extends React.Component {
       userRatingNumber: newUserRatingNumber,
       userRatingAverage: newUserRatingAverage
     })
+
   }
 
   componentDidMount() {
@@ -122,7 +129,7 @@ class SingleRestaurant extends React.Component {
     this.getSingleRestaurantsRatings(restaurantId);
   }
   render() {
-    console.log(this.state.photoURL)
+
     return (
 
       <div className="single-page">

@@ -61,7 +61,7 @@ class RestaurantList extends React.Component {
   }
 
   render() {
-    console.log(this.state);
+
     return (
       <div className='restaurant-list'>
         <h3 className="header-restaurant">Restaurant List</h3>
