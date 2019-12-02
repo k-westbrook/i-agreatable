@@ -27,7 +27,9 @@ class CommentForm extends React.Component {
               <textarea required="required" maxLength='100' name="comment" className="input-comment"></textarea>
             </div>
           </div>
-          <button className="submit-button">Submit your comment!</button>
+          <div className='submit-button-container'>
+            <button className="submit-button">Submit your comment!</button>
+          </div>
         </form>
 
       </div>

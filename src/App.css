@@ -642,9 +642,11 @@ margin-bottom: 5vh;
 
 
   .restaurant-name-title-single-page{
-    font-size: 7vh;
+    font-size: 6vh;
     margin-bottom: 1vh;
     margin-top: 0vh;
+    margin-left:1vw;
+    margin-right:1vw;
   }
   .restaurant-info-container
   {
@@ -697,10 +699,10 @@ margin-bottom: 5vh;
     text-align: left;
     margin-left:5vw;
     margin-right:5vw;
-    margin-top: 3vh;
+    margin-top: 1vh;
     padding-left:3vw;
     padding-right:3vw;
-    padding-bottom: 5vh;
+    padding-bottom: 2vh;
     padding-top: 2vh;
     border-style: groove;
     border-color: black;
@@ -711,6 +713,7 @@ margin-bottom: 5vh;
     text-align: left;
     font-size: 5vh;
     margin-top: 1vh;
+    margin-bottom: 0vh;
 
   }
   .single-page{
@@ -747,7 +750,6 @@ margin-bottom: 5vh;
     margin-bottom: 1vh;
   }
   .rating-button{
-    font-size: 3vh;
     font-family: 'Roboto Condensed';
     margin-left:2vw;
     background-color: lightgray;
@@ -778,27 +780,28 @@ margin-bottom: 5vh;
 
   .leave-a-comment-text{
     text-align: left;
-    font-size: 6vh;
-    margin-bottom: 5vh;
+    font-size: 4vh;
+    margin-bottom: 0vh;
+    border-bottom-style: solid;
   }
   .name-comment-container{
     display: flex;
+    flex-direction: column;
     margin-bottom: 2vh;
     font-family: 'Roboto Condensed';
     align-items: center;
   }
 
   .text-name{
-    margin-right:2vw;
-    font-size: 5vh;
+    font-size: 4vh;
      min-width: 10vw;
   }
 
   .input-name-comment{
-    margin-top:2vh;
-    width: 20vw;
+
+    width: 70vw;
     height:5vh;
-    font-size: 3vh;
+    font-size: 4vh;
     font-family: 'Roboto Condensed';
     border-style: groove;
     border-color: black;
@@ -808,7 +811,7 @@ margin-bottom: 5vh;
 
   .input-comment{
     height:20vh;
-    width:40vw;
+    width:70vw;
     font-size :3.5vh;
     resize: none;
     font-family: 'Roboto Condensed';
@@ -816,12 +819,16 @@ margin-bottom: 5vh;
     border-color: black;
     border-width: 2px;
   }
-
+.submit-button-container
+{
+  display: flex;
+  justify-content: center;
+}
   .submit-button{
   margin-top:3vh;
-  margin-bottom: 3vh;
-  height:8vh;
-  width:50%;
+  margin-bottom: 1vh;
+  height:6vh;
+  width:80vw;
   font-size:3.5vh;
   font-family: 'Roboto Condensed';
   background-color: lightgray;
@@ -829,17 +836,18 @@ margin-bottom: 5vh;
   border-color: black;
   border-width: 2px;
   border-radius: 3px;
+
   }
 
   .comment-section{
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
   }
 
   .comment-container
   {
     font-size: 3vh;
     font-family: 'Roboto Condensed';
-    width:60vw;
+    width:80vw;
     word-wrap: break-word;
     padding:1vh;
 
@@ -847,7 +855,7 @@ margin-bottom: 5vh;
 
   .comment-text
   {
-    font-size: 4vh;
+    font-size: 3vh;
     font-family: 'Roboto Condensed';
   }
 }
