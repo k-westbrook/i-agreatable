@@ -178,7 +178,8 @@ padding-bottom: 15px;
 .restaurant-container{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: flex-start;
   background-color:	#F5F5F5;
   padding-bottom: 5vh;
   width:90vw;
@@ -189,6 +190,8 @@ padding-bottom: 15px;
   height:60vh;
   width: 25vw;
   margin-top:5vh;
+  margin-left:1vw;
+  margin-right:1vw;
   padding:1vh;
   display:flex;
   flex-direction: column;
