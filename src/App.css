@@ -585,7 +585,7 @@ margin-bottom: 5vh;
   .restaurant-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     background-color:	#F5F5F5;
     padding-bottom: 5vh;
     width:90vw;
@@ -594,7 +594,7 @@ margin-bottom: 5vh;
   .restaurant-card{
     border-style:groove;
     height:60vh;
-    width: 25vw;
+    width: 85vw;
     margin-top:5vh;
     padding:1vh;
     display:flex;
@@ -608,22 +608,22 @@ margin-bottom: 5vh;
 
   .restaurant-name-title{
     font-size: 4vh;
-    height:10vh;
-    margin-top:5vh;
+    min-height: 5vh;
+    margin-top:1vh;
     margin-bottom:3vh;
   }
 
   .restaurant-short-info{
-    height:30vh;
-    font-size:3.5vh;
+
+    font-size:4vh;
     line-height: 4.5vh;
-    margin-top:2vh;
+    margin-top:1vh;
     font-family: 'Roboto Condensed';
   }
 
   .restaurant-photo{
-    max-width: 100%;
-    max-height: 30%;
+    max-width: 30%;
+    max-height: 70%;
 
   }
   .no-restaurant-container{
