@@ -2,6 +2,13 @@ import React from 'react';
 
 
 export default function RestaurantInfoContainer(props) {
+  let userRatingAverage;
+
+  if (props.restaurant.userRatingAverage) {
+    userRatingAverage = props.restaurant.userRatingAverage;
+  } else {
+    userRatingAverage = "No Ratings Yet"
+  }
   return (
     <div className='restaurant-info-container '>
       <h3 className="restaurant-name-title-single-page">{props.restaurant.restaurantName}</h3>
@@ -19,15 +26,7 @@ export default function RestaurantInfoContainer(props) {
             <br />
             <b>Rating by Me: </b>{props.restaurant.rating}
             <br />
-            {(props.restaurant.userRatingAverage) ?
-              <div>
-                <b>Average User Rating: </b>{props.restaurant.userRatingAverage}
-              </div>
-              :
-              <div>
-                <b>Average User Rating: </b>No Ratings Yet
-              </div>
-            }
+            <b>Average User Rating: </b>{userRatingAverage}
           </p>
         </div>
       </div>
