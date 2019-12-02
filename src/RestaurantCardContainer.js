@@ -15,7 +15,7 @@ class RestaurantCardContainer extends React.Component {
             if ((this.props.foodType === "Select One" || this.props.foodType === restaurant.food_type) && (this.props.location === "Select One" || this.props.location === restaurant.location_name)) {
               count++;
               return (
-                <RestaurantCard restaurant={restaurant} key={parseInt(restaurant.id)} />
+                <RestaurantCard restaurant={restaurant} key={parseInt(restaurant.restaurant_id)} />
               )
             }
           })

@@ -76,7 +76,7 @@ class SingleRestaurant extends React.Component {
     const results = await axios.post(`https://wg49ryzop8.execute-api.us-west-1.amazonaws.com/Production/`, { restaurant_id: restaurantId, name, comment })
     evt.persist();
     const newComment = {
-      restaurantId, id: results.data.body[0].comment_id, name, comment
+      restaurant_id: restaurantId, id: results.data.body[0].comment_id, name, comment
     }
 
     const newCommentArray = [...this.state.comments, newComment];
