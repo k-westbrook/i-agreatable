@@ -3,6 +3,10 @@ import './App.css';
 import { Link } from 'react-router-dom';
 
 export default function RestaurantCard(props) {
+  let { photo_url } = props;
+  if (!photo_url) {
+    photo_url = "https://cdn.pixabay.com/photo/2017/07/28/23/18/coming-soon-2550190_1280.jpg"
+  }
   return (
     <div>
       <Link className="link" to={`/review/${props.restaurant.location_name}/${props.restaurant.food_type}/${props.restaurant.restaurant_id}`} key={parseInt(props.restaurant.restaurant_id)} >
