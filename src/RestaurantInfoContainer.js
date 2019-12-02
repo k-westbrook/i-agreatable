@@ -3,10 +3,6 @@ import React from 'react';
 
 export default function RestaurantInfoContainer(props) {
   let userRatingAverage;
-  let { photoURL } = props;
-  if (!photoURL) {
-    photoURL = "https://cdn.pixabay.com/photo/2017/07/28/23/18/coming-soon-2550190_1280.jpg";
-  }
 
   if (props.restaurant.userRatingAverage) {
     userRatingAverage = props.restaurant.userRatingAverage;

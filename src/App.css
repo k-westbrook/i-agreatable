@@ -216,7 +216,7 @@ padding-bottom: 15px;
 
 .restaurant-photo{
   max-width: 100%;
-  max-height: 40%;
+  max-height: 30%;
 
 }
 .no-restaurant-container{
@@ -243,14 +243,16 @@ padding-bottom: 15px;
   display:flex;
   flex-direction: column;
   margin-bottom: 10vh;
+
 }
 .restaurant-info-single-page{
   font-size: 6vh;
   line-height: 10vh;
   margin-top:0vh;
-  flex-grow: 1;
+  width:50vw;
   text-align: left;
   font-family: 'Roboto Condensed';
+  padding-left:2vw;
 }
 
 .restaurant-photo-single-page{
@@ -264,8 +266,9 @@ padding-bottom: 15px;
 .image-container-single-page
 {
   text-align: right;
-  flex-grow: 1;
-  margin-right:5vw;
+  width:50vw;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .restaurant-single-page-side-by-side
