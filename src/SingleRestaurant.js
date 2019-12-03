@@ -1,8 +1,6 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios';
-import CommentForm from './CommentForm';
-import CommentSection from './CommentSection';
 import RestaurantInfoContainer from './RestaurantInfoContainer';
 import RestaurantReviewContainer from './RestaurantReviewContainer';
 
@@ -33,6 +31,10 @@ class SingleRestaurant extends React.Component {
 
   async getSingleRestaurantRequest(id) {
     const response = await axios.get(`https://0uz9m4vuz3.execute-api.us-west-1.amazonaws.com/Production/${id}`);
+
+    if (response.data.length === 0) {
+      this.props.history.goBack();
+    }
     const data = response.data[0];
 
     this.setState({

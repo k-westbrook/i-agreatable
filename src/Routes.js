@@ -12,6 +12,8 @@ function Routes() {
       <Route exact path="/" component={HomePage} />
       <Route exact path="/thelist" component={RestaurantList} />
       <Route exact path="/review/:location/:foodType/:id" component={SingleRestaurant} />
+      <Route component={RestaurantList}
+      />
     </Switch>
 
   )
